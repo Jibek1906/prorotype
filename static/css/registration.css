@@ -1,0 +1,120 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Контейнер страницы */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/background.jpg"); /* Фоновое изображение */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Контейнер с изображением и формой */
+.registration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white; /* Белый фон для всего контейнера */
+    border-radius: 30px; /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень вокруг контейнера */
+}
+
+/* Стиль для изображения */
+.registration-image {
+    flex: 1;
+    max-width: 50%; /* Картинка будет занимать 50% ширины */
+    margin-right: 20px;
+}
+
+.registration-image img {
+    width: 600px;  /* Задаем изображению максимальную ширину */
+    height: 600px; /* Поддерживаем пропорции изображения */
+    border-radius: 30px;
+}
+
+/* Контейнер для формы */
+.form-container {
+    flex: 1;
+    max-width: 40%; /* Форма занимает оставшуюся часть */
+    text-align: center;
+    padding-right: 50px;
+}
+
+/* Стили заголовков */
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Поля ввода */
+form input, form select {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #EBEADE;
+    box-sizing: border-box; /* Учитывает padding и border */
+}
+
+/* Убираем стрелочки в number-полях */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Убираем стрелочки в Webkit-браузерах (Chrome, Safari) */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: none; /* Webkit-браузеры */
+    appearance: none; /* Универсальное решение */
+}
+
+/* Стиль для select */
+form select {
+    -webkit-appearance: auto; /* Стандартное поведение с стрелочками в Chrome/Safari */
+    -moz-appearance: none;    /* Для Firefox */
+    appearance: auto;         /* Стандартный вид с стрелочками */
+    text-align: center;       /* Выравнивание текста по центру */
+}
+
+/* Кнопки */
+button {
+    width: 100%;
+    padding: 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #A19C84;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Анимация на hover */
+}
+
+button:hover {
+    background-color: #bebbae;
+}
+
+/* Ссылки */
+p a {
+    color: #000000;
+    text-decoration: none;
+}
